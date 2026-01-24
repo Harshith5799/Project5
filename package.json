@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Harshith5799/project5.git",
+  "homepage": "https://Harshith5799.github.io/project5.git",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

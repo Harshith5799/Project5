@@ -4,11 +4,11 @@ export default class App extends Component {
   constructor(){
     super();
     this.state= {data:{
-      name: "BOLLINENI HARSHITH",
+      name: "Bollineni Harshith",
       role: "Full Stack Developer",
       bio: "Software Architech and Minimalist",
       status: [{label:"Posts",value:"84"},
-        {label:"Followers",value:"2.5k"},
+        {label:"Followers",value:"2.5k"}, 
         {label:"Following",value:"190"}]
     }};
   }

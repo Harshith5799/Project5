@@ -1,32 +1,119 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+x* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+}
+
+/* Full-width banner */
+.app {
+  width: 100vw;
+  height: 320px;
+  background: #8b0000;
+  color: #fff;
+  padding: 40px 80px;
+}
+
+/* Profile section */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+/* Profile image */
+.profile img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: #e0e0e0;
+}
+
+/* Text info */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.role {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.bio {
+  font-size: 13px;
+  max-width: 520px;
+  opacity: 0.85;
+}
+
+/* Buttons */
+.follow,
+.message {
+  margin-top: 8px;
+  padding: 6px 16px;
+  font-size: 13px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.follow {
+  background: #ffffff;
+  color: #8b0000;
+  font-weight: 500;
+}
+
+.message {
+  margin-left: 8px;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.8);
+}
+
+/* Divider */
+.status {
+  margin-top: 35px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+
+/* Stats */
+.status .info {
   text-align: center;
 }
-.name {
-  color: darkgreen;
-  font-size: 20px;
-  font-weight: bold;
-  font-family:Arial, Helvetica, sans-serif;
+
+.value {
+  font-size: 18px;
+  font-weight: 600;
 }
-.role{
-  font-weight: bold;
-  color: black;
+
+.label {
+  font-size: 11px;
+  margin-top: 2px;
+  letter-spacing: 1px;
+  opacity: 0.8;
 }
-.follow {
-  background-color: blue;
-}
-.message {
-  background-color: blue;
-  margin-left: 20px;
-}
-.app {
-  background-color: skyblue;
-}
-.bio {
-  color: black;
-}
-img {
-  border-radius: 600px;
+
+/* Laptop / large screen optimization */
+@media (max-width: 1024px) {
+  .app {
+    padding: 30px 40px;
+  }
+
+  .status {
+    gap: 60px;
+  }
 }
